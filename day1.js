@@ -1,9 +1,8 @@
-let str = `1abc2
-pqr3stu8vwx
-a1b2c3d4e5f
-treb7uchet`;
+const main = () => {
+    console.log(
 
-str = str.split("\n")
+        data
+        .split("\n")
     .map((line) => {
         line = line.split("")
             .filter(char => !char.search(new RegExp("[0-9]")));
@@ -15,5 +14,20 @@ str = str.split("\n")
     }).reduce((res,elem)=>{
         return res+~~elem.join("");
     },0)
+        
+    );
+};
 
-console.log(str)
+
+const data = `1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet`;
+
+main();
+
+
+
+
+
+
